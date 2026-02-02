@@ -1,0 +1,482 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #eaeaea;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 80px;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.hero-role {
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.hero-links {
+    display: flex;
+    gap: 24px;
+}
+
+.hero-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    position: relative;
+    opacity: 0.85;
+}
+
+.hero-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.hero-links a:hover::after {
+    width: 100%;
+}
+
+.hero-links a:hover {
+    opacity: 1;
+}
+
+
+.portfolio-visual {
+    background-color: #000;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.portfolio-visual h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.mockups {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.mockup {
+    position: relative;
+    width: 540px;
+    overflow: hidden;
+}
+
+.mockup img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.15));
+
+}
+
+.mockup h3 {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mockup .copy {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: 1;
+}
+
+.mockup .copy p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.mockup:hover .copy {
+    opacity: 1;
+}
+
+.portfolio-visual {
+    padding-top: 30px;   
+    padding-bottom: 60px;
+}
+
+.portfolio-visual h1 {
+    margin-bottom: 6px; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
+}
+
+.mockup .copy p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+
+.projects {
+    background-color: #000;
+    padding: 120px 80px;
+    text-align: center;
+}
+
+.projects h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.projects-subtitle {
+    color: #bdbdbd;
+    font-size: 1rem;
+    margin-bottom: 60px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: transform 0.5s ease;
+}
+
+
+.project-info {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    color: #eaeaea;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.project-info span {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-info {
+    opacity: 1;
+}
+
+.editorial-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.editorial-video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+
+  opacity: 0;
+  transform: scale(0.97) translateY(20px);
+  animation: videoFadeIn 1.2s ease-out forwards;
+}
+
+.editorial-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+  border-radius: 18px;
+
+  opacity: 0;
+  animation: captionFadeIn 1.4s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.editorial-tag {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff5da2;
+  margin-bottom: 8px;
+}
+
+.editorial-caption h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.editorial-text {
+  font-size: 0.95rem;
+  color: #ddd;
+  max-width: 420px;
+}
+
+@keyframes videoFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes captionFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.literary-frame {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.literary-container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.literary-container h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+}
+
+.literary-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #e0e0e0;
+    text-align: justify;
+    margin: 0 auto 40px;
+    max-width: 720px;
+}
+
+.literary-text em {
+    font-style: italic;
+    color: #d6d6d6;
+}
+
+.literary-note {
+    font-size: 0.85rem;
+    color: #b5b5b5;
+    letter-spacing: 0.8px;
+    font-style: italic;
+}
+
+.closing-frame {
+    background-color: #000;
+    padding: 120px 80px;
+}
+
+.closing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;
+}
+
+
+.closing-text {
+    font-size: 1rem;
+
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    max-width: 520px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+    font-style: italic;
+}
+
+.closing-signature {
+    margin-top: 32px;
+
+    font-family: 'Allura', 'Pacifico', 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    color: #ffffff;
+    opacity: 0.9;
+
+    letter-spacing: 1px;
+    transform: rotate(-2deg);
+
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.carousel-frame {
+    background-color: #000;
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.carousel-frame h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255,255,255,0.35);
+}
+
+.carousel-frame .projects-subtitle {
+    color: #bdbdbd;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 700px;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slideCarousel 18s linear infinite;
+}
+
+.carousel img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.25);
+}
+
+@keyframes slideCarousel {
+    0% {
+        left: 100%; 
+    }
+    100% {
+        left: -100%;  
+    }
+}
