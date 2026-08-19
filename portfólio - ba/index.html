@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beatriz Alves — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <span class="nav__brand">B<span class="nav__brand-dot">·</span>A</span>
+  <ul class="nav__links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="certificacoes.html">Certificações</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <span class="nav__spark">✦</span>
+  <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- DOT NAV (modo slide) -->
+<nav class="dotnav" aria-label="Navegação entre seções">
+  <a href="#hero" class="dotnav__dot is-active" data-index="01" aria-label="Início"></a>
+  <a href="#sobre" class="dotnav__dot" data-index="02" aria-label="Sobre"></a>
+  <a href="#projetos" class="dotnav__dot" data-index="03" aria-label="Projetos"></a>
+  <a href="#servicos" class="dotnav__dot" data-index="04" aria-label="Serviços"></a>
+  <a href="#contato" class="dotnav__dot" data-index="05" aria-label="Contato"></a>
+</nav>
+
+<main id="scroller">
+
+  <!-- 01 · HERO -->
+  <section class="panel hero" id="hero">
+
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Comunicação</p>
+        <h1 class="display">
+          Onde <em>estratégia encontra</em><br>
+          a <em>criatividade.</em>
+        </h1>
+        <p class="lede">
+         Toda grande história começa com uma ideia. É ela que aproxima pessoas, desperta sentimentos e transforma mensagens em experiências capazes de deixar marcas.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--solid" href="#projetos">Ver projetos <span class="arrow">↗</span></a>
+          <a class="btn btn--ghost" href="cv.pdf" download>Download CV <span class="arrow">⭳</span></a>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+      <img src="img/principal3.jpg" alt="Retrato de Beatriz Alves em preto e branco">
+        <span class="spark spark--lg" aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <footer class="panel__footer">
+      <span>Beatriz Alves</span>
+      <span>Portfólio</span>
+    </footer>
+  </section>
+
+  <!-- 02 · SOBRE -->
+  <section class="panel sobre" id="sobre">
+
+    <div class="sobre__grid">
+      <div class="sobre__copy">
+        <p class="eyebrow">Sobre mim</p>
+        <h2 class="display display--md">
+          Criatividade<br>
+          Conexão <span class="spark spark--inline">✦</span><br>
+          e impacto.
+        </h2>
+        <p class="body-text">
+          Sou jornalista em formação, apaixonada por contar boas histórias e transformar ideias em experiências memoráveis. Ao longo da minha trajetória, desenvolvi experiência em redação, produção de conteúdo, copywriting, branding e design, unindo criatividade, sensibilidade e estratégia para criar conexões autênticas entre pessoas e marcas.
+        </p>
+        <a class="btn btn--solid" href="#contato">Vamos conversar <span class="arrow">↗</span></a>
+      </div>
+
+      <div class="sobre__portrait">
+        <img src="img/criatividade.jpg" alt="Beatriz Alves sentada, retrato em preto e branco">
+        
+      </div>
+    </div>
+
+    <footer class="panel__footer">
+      <span>Beatriz Alves</span>
+      <span>Portfólio</span>
+    </footer>
+  </section>
+
+  <!-- 03 · PROJETOS -->
+  <section class="panel projetos" id="projetos">
+
+    <p class="eyebrow">Projetos</p>
+    <h2 class="display display--sm display--center">
+      Ideias que viram <em>resultados.</em> <span class="spark spark--inline">✦</span>
+    </h2>
+
+   
+
+    <div class="grid grid--projects">
+      <a class="project" data-cat="branding social-media" href="projetos/elora.html">
+        <div class="project__img"><img src="img/eloralogo.jpg" alt="Elora"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Elora</h3>
+            <p>Branding e copywriting</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="project" data-cat="Social media" href="projetos/socialmidia.html">
+        <div class="project__img"><img src="img/social media.jpg" alt="Social Media"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Social Media</h3>
+            <p>Estratégia de Conteúdo</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="project" data-cat="Literatura" href="projetos/blossom.html">
+        <div class="project__img"><img src="img/blossom.jpg" alt="Blossom Books"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Blossom Books</h3>
+            <p>Curadoria Literária</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="project" data-cat="Criação visual" href="projetos/visual.html">
+        <div class="project__img"><img src="img/visualcria.jpg" alt="Criação Visual"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Criação Visual</h3>
+            <p>Estética, conceito e funcionalidade</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="project" data-cat="jornalismo" href="projetos/jornalismo.html">
+        <div class="project__img"><img src="img/jornal.jpg" alt="Jornalismo"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Jornalismo</h3>
+            <p>Jornalismo, pesquisa e storytelling</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="project" data-cat="branding design" href="projetos/becky.html">
+        <div class="project__img"><img src="img/becky.jpg" alt="Becky Lacerda"></div>
+        <div class="project__meta">
+          <div>
+            <h3>Becky Lacerda</h3>
+            <p>Escrita e publicação independente</p>
+          </div>
+          <span class="arrow">↗</span>
+        </div>
+      </a>
+    </div>
+
+    <footer class="panel__footer">
+      <span>Beatriz Alves</span>
+      <span>Portfólio</span>
+    </footer>
+  </section>
+
+  <!-- 04 · SERVIÇOS -->
+  <section class="panel servicos" id="servicos">
+
+    <div class="servicos__intro">
+      <div>
+        <p class="eyebrow">Serviços</p>
+        <h2 class="display display--sm display--center">
+          Comunicação completa, do conceito à <em>execução.</em>
+        </h2>
+      </div>
+      <p class="body-text body-text--intro">
+       
+      </p>
+    </div>
+
+    <div class="grid grid--services">
+      <div class="service">
+        <span class="service__icon">✎</span>
+        <h3>Jornalismo</h3>
+        <p>Reportagens, entrevistas e produção de conteúdo.</p>
+      </div>
+      <div class="service">
+        <span class="service__icon">✒</span>
+        <h3>Copywriting</h3>
+        <p>Textos persuasivos para sites, redes e campanhas.</p>
+      </div>
+      <div class="service">
+        <span class="service__icon">◫</span>
+        <h3>Branding</h3>
+        <p>Identidade visual e posicionamento de marca.</p>
+      </div>
+      <div class="service">
+        <span class="service__icon">◔</span>
+        <h3>Social Media</h3>
+        <p>Planejamento de conteúdo e gestão de redes sociais.</p>
+      </div>
+      <div class="service">
+        <span class="service__icon">✎</span>
+        <h3>Design</h3>
+        <p>Design gráfico, editorial e digital.</p>
+      </div>
+      <div class="service">
+        <span class="service__icon">☎</span>
+        <h3>Assessoria</h3>
+        <p>Consultoria em comunicação para marcas e profissionais.</p>
+      </div>
+    </div>
+
+    <footer class="panel__footer">
+      <span>Beatriz Alves</span>
+      <span>Portfólio</span>
+    </footer>
+  </section>
+
+  <!-- 05 · CONTATO -->
+  <section class="panel contato" id="contato">
+
+    <div class="contato__grid">
+      <div class="contato__copy">
+        <p class="eyebrow">Contato</p>
+        <h2 class="display display--sm">
+      Vamos dar vida<br><em>à sua próxima</em> ideia? <span class="spark spark--inline">✦</span>
+        </h2>
+        <p class="body-text">
+        Já viu como eu penso.
+        Agora entende como eu escrevo.
+        O próximo passo, construímos juntos!
+        </p>
+
+        <ul class="contact-list">
+          <li><span class="contact-icon">✉</span><a href="mailto:holla_bia@outlook.com">holla_bia@outlook.com</a></li>
+          <li><span class="contact-icon">☎</span><a href="tel:+5511983116614">(11) 98311-6614</a></li>
+          <li><span class="contact-icon">in</span><a href="https://www.linkedin.com/in/beatrizaoliveira22/" target="_blank" rel="noopener">linkedin.com/in/beatrizaoliveira22/</a></li>
+          <li><span class="contact-icon">◎</span><a href="https://www.instagram.com/design.elora?igsh=NHZ0aGFlbmh6ZXB6" target="_blank" rel="noopener">@design.elora</a></li>
+        </ul>
+
+        <a class="btn btn--solid" href="mailto:holla_bia@outlook.com">Enviar mensagem <span class="arrow">↗</span></a>
+      </div>
+
+      <div class="contato__portrait">
+        <img src="img/contato.jpg" alt="Detalhe artístico em preto e branco">
+        <p class="script-overlay script-overlay--right">
+          palavras<br>ideias<br>estratégias<br>conexões<br>histórias<br>impacto
+        </p>
+        <span class="spark spark--lg" aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <footer class="panel__footer">
+      <span>Beatriz Alves</span>
+      <span>Portfólio</span>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
