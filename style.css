@@ -472,43 +472,15 @@ button:focus-visible {
 
 .hero__grid {
   flex: 1;
-
   display: grid;
-
-  /*
-   * MAIS ESPAÇO PARA O TEXTO
-   * E MENOS DISTÂNCIA ATÉ A FOTO
-   */
-  grid-template-columns: 1.15fr 0.85fr;
-
-  align-items: center;
-
-  gap: 0;
-}
-
-.hero__grid {
-  flex: 1;
-
-  display: grid;
-
-  /*
-   * DEIXA TEXTO E FOTO MAIS PRÓXIMOS
-   */
   grid-template-columns: 1fr 1fr;
-
   align-items: center;
-
   gap: 0;
 }
 
 .hero__copy {
   max-width: 650px;
-
-  /*
-   * APROXIMA O TEXTO DA FOTO
-   */
-  transform: translateX(50px);
-
+  transform: translateX(30px);
   position: relative;
   z-index: 2;
 }
@@ -517,6 +489,14 @@ button:focus-visible {
   max-width: 650px;
 }
 
+.hero__portrait {
+  position: relative;
+  height: min(80vh, 740px);
+  justify-self: start;
+  width: 100%;
+  max-width: 570px;
+  transform: translateX(0);
+}
 
 /* ============================================
    FOTO DA HOME
