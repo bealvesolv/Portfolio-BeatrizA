@@ -444,10 +444,7 @@ button:focus-visible {
 
 .hero__portrait {
   position: relative;
-  height: min(64vh, 580px);
-  justify-self: end;
-  width: 100%;
-  max-width: 580px;
+  height: min(72vh, 640px);
 }
 
 .hero__portrait img {
