@@ -486,13 +486,31 @@ button:focus-visible {
   gap: 0;
 }
 
+.hero__grid {
+  flex: 1;
+
+  display: grid;
+
+  /*
+   * DEIXA TEXTO E FOTO MAIS PRÓXIMOS
+   */
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 0;
+}
+
 .hero__copy {
   max-width: 650px;
 
   /*
    * APROXIMA O TEXTO DA FOTO
    */
-  transform: translateX(35px);
+  transform: translateX(50px);
+
+  position: relative;
+  z-index: 2;
 }
 
 .hero__copy .display {
@@ -500,29 +518,30 @@ button:focus-visible {
 }
 
 
-/*
- * FOTO DA HOME MAIOR
- */
+/* ============================================
+   FOTO DA HOME
+   ============================================ */
 
 .hero__portrait {
   position: relative;
 
   /*
-   * FOTO MAIS ALTA
+   * FOTO MAIOR
    */
-  height: min(76vh, 700px);
+  height: min(80vh, 740px);
 
-  justify-self: end;
+  justify-self: start;
 
   width: 100%;
 
   /*
    * FOTO MAIS LARGA
    */
-  max-width: 540px;
+  max-width: 570px;
 
   /*
-   * PUXA A FOTO PARA PERTO DO TEXTO
+   * PUXA A FOTO PARA A ESQUERDA,
+   * DEIXANDO-A MAIS PRÓXIMA DO TEXTO
    */
   transform: translateX(-35px);
 }
