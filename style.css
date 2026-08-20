@@ -97,7 +97,7 @@ button:focus-visible {
 
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--fg-muted);
@@ -110,8 +110,6 @@ button:focus-visible {
   text-transform: uppercase;
   line-height: 1.02;
   letter-spacing: 0.01em;
-
-  /* AUMENTADO */
   font-size: clamp(3rem, 5.8vw, 5rem);
 }
 
@@ -134,11 +132,11 @@ button:focus-visible {
 
 
 /* ============================================
-   TEXTOS
+   TEXTOS PRINCIPAIS
    ============================================ */
 
 .body-text {
-  font-size: 1.22rem;
+  font-size: 1.32rem;
   color: #cfccc4;
   max-width: 42ch;
   margin-top: 20px;
@@ -152,7 +150,7 @@ button:focus-visible {
 }
 
 .lede {
-  font-size: 1.25rem;
+  font-size: 1.32rem;
   color: #cfccc4;
   max-width: 39ch;
   margin: 20px 0 28px;
@@ -215,7 +213,7 @@ button:focus-visible {
   display: flex;
   gap: 40px;
 
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -396,7 +394,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
 
-  font-size: 0.72rem;
+  font-size: 0.74rem;
 
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -425,7 +423,7 @@ button:focus-visible {
 
   padding: 15px 26px;
 
-  font-size: 0.76rem;
+  font-size: 0.78rem;
 
   letter-spacing: 0.16em;
 
@@ -477,38 +475,56 @@ button:focus-visible {
 
   display: grid;
 
-  grid-template-columns: 1.05fr 0.95fr;
+  /*
+   * MAIS ESPAÇO PARA O TEXTO
+   * E MENOS DISTÂNCIA ATÉ A FOTO
+   */
+  grid-template-columns: 1.15fr 0.85fr;
 
   align-items: center;
 
-  /* DIMINUÍDO */
   gap: 0;
 }
 
 .hero__copy {
-  max-width: 620px;
+  max-width: 650px;
 
-  /* PUXA O TEXTO PARA MAIS PERTO DA FOTO */
-  transform: translateX(20px);
+  /*
+   * APROXIMA O TEXTO DA FOTO
+   */
+  transform: translateX(35px);
 }
 
 .hero__copy .display {
-  max-width: 620px;
+  max-width: 650px;
 }
+
+
+/*
+ * FOTO DA HOME MAIOR
+ */
 
 .hero__portrait {
   position: relative;
 
-  height: min(70vh, 640px);
+  /*
+   * FOTO MAIS ALTA
+   */
+  height: min(76vh, 700px);
 
   justify-self: end;
 
   width: 100%;
 
-  max-width: 500px;
+  /*
+   * FOTO MAIS LARGA
+   */
+  max-width: 540px;
 
-  /* PUXA A FOTO PARA A ESQUERDA */
-  transform: translateX(-20px);
+  /*
+   * PUXA A FOTO PARA PERTO DO TEXTO
+   */
+  transform: translateX(-35px);
 }
 
 .hero__portrait img {
@@ -539,11 +555,14 @@ button:focus-visible {
 
   align-items: center;
 
-  gap: 35px;
+  /*
+   * MENOR ESPAÇO ENTRE TEXTO E FOTO
+   */
+  gap: 15px;
 }
 
 .sobre__copy {
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .sobre__portrait {
@@ -661,7 +680,7 @@ button:focus-visible {
 }
 
 .project__meta p {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 
   color: var(--fg-muted);
 
@@ -688,11 +707,14 @@ button:focus-visible {
 
   text-align: center;
 
-  margin-bottom: 42px;
+  /*
+   * MENOS ESPAÇO ANTES DOS SERVIÇOS
+   */
+  margin-bottom: 32px;
 }
 
 .servicos__intro > div {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .servicos__intro .display {
@@ -702,14 +724,16 @@ button:focus-visible {
 }
 
 
-/* TÍTULOS E TEXTOS DOS SERVIÇOS MAIORES */
+/*
+ * GRID DOS SERVIÇOS
+ */
 
 .grid--services {
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 34px 70px;
+  gap: 30px 70px;
 
   width: 100%;
 }
@@ -717,7 +741,7 @@ button:focus-visible {
 .service {
   border-top: 1px solid var(--line);
 
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .service__icon {
@@ -726,16 +750,16 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
 
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
 
   border: 1px solid var(--line-strong);
 
   border-radius: 50%;
 
-  font-size: 1rem;
+  font-size: 1.05rem;
 
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .service h3 {
@@ -743,8 +767,10 @@ button:focus-visible {
 
   font-weight: 500;
 
-  /* AUMENTADO */
-  font-size: 1.55rem;
+  /*
+   * TÍTULO DOS SERVIÇOS MAIOR
+   */
+  font-size: 1.65rem;
 
   margin-bottom: 8px;
 
@@ -752,8 +778,10 @@ button:focus-visible {
 }
 
 .service p {
-  /* AUMENTADO */
-  font-size: 1.15rem;
+  /*
+   * TEXTO DOS SERVIÇOS BEM MAIOR
+   */
+  font-size: 1.22rem;
 
   color: #cfccc4;
 
@@ -776,11 +804,14 @@ button:focus-visible {
 
   align-items: center;
 
-  gap: 35px;
+  /*
+   * TEXTO E FOTO MAIS PRÓXIMOS
+   */
+  gap: 15px;
 }
 
 .contato__copy {
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .contact-list {
@@ -800,7 +831,10 @@ button:focus-visible {
 
   gap: 14px;
 
-  font-size: 1.05rem;
+  /*
+   * CONTATOS MAIORES
+   */
+  font-size: 1.08rem;
 
   color: #d8d5cd;
 
@@ -904,6 +938,10 @@ button:focus-visible {
 }
 
 
+/* ============================================
+   CELULAR
+   ============================================ */
+
 @media (max-width: 600px) {
 
   .panel {
@@ -932,17 +970,17 @@ button:focus-visible {
 
   .body-text,
   .lede {
-    font-size: 1.08rem;
+    font-size: 1.12rem;
 
     line-height: 1.6;
   }
 
   .service h3 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
   }
 
   .service p {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
   }
 }
 
@@ -1041,7 +1079,10 @@ button:focus-visible {
 
   margin-top: 0;
 
-  font-size: 1.18rem;
+  /*
+   * TEXTO DOS PROJETOS MAIOR
+   */
+  font-size: 1.25rem;
 
   line-height: 1.7;
 }
@@ -1089,7 +1130,7 @@ button:focus-visible {
 .case-gallery figcaption {
   margin-top: 12px;
 
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 
   color: var(--fg-muted);
 
@@ -1178,6 +1219,10 @@ button:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+
+/* ============================================
+   CASE STUDY — MOBILE
+   ============================================ */
 
 @media (max-width: 700px) {
 
