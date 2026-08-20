@@ -475,7 +475,6 @@ button:focus-visible {
 
   display: grid;
 
-  /* MESMA PROPORÇÃO DA PÁGINA SOBRE */
   grid-template-columns: 1fr 0.9fr;
 
   align-items: center;
@@ -500,9 +499,9 @@ button:focus-visible {
 .hero__portrait {
   position: relative;
 
-  height: min(76vh, 700px);
+  height: min(72vh, 640px);
 
-  justify-self: end;
+  justify-self: stretch;
 
   width: 100%;
 
@@ -523,6 +522,7 @@ button:focus-visible {
 .hero__portrait .spark--lg {
   top: 6%;
   left: -6%;
+}
 }
 /* ============================================
    02 · SOBRE
