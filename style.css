@@ -472,15 +472,21 @@ button:focus-visible {
 
 .hero__grid {
   flex: 1;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns: 1.12fr 0.88fr;
+
   align-items: center;
-  gap: 0;
+
+  gap: 20px;
 }
 
 .hero__copy {
   max-width: 650px;
-  transform: translateX(30px);
+
+  transform: translateX(20px);
+
   position: relative;
   z-index: 2;
 }
@@ -491,39 +497,16 @@ button:focus-visible {
 
 .hero__portrait {
   position: relative;
+
   height: min(80vh, 740px);
-  justify-self: start;
+
+  justify-self: end;
+
   width: 100%;
+
   max-width: 570px;
+
   transform: translateX(0);
-}
-
-/* ============================================
-   FOTO DA HOME
-   ============================================ */
-
-.hero__portrait {
-  position: relative;
-
-  /*
-   * FOTO MAIOR
-   */
-  height: min(80vh, 740px);
-
-  justify-self: start;
-
-  width: 100%;
-
-  /*
-   * FOTO MAIS LARGA
-   */
-  max-width: 570px;
-
-  /*
-   * PUXA A FOTO PARA A ESQUERDA,
-   * DEIXANDO-A MAIS PRÓXIMA DO TEXTO
-   */
-  transform: translateX(-35px);
 }
 
 .hero__portrait img {
@@ -539,7 +522,6 @@ button:focus-visible {
   top: 6%;
   left: -6%;
 }
-
 
 /* ============================================
    02 · SOBRE
