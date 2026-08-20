@@ -475,6 +475,11 @@ button:focus-visible {
 
   display: grid;
 
+  /*
+   * Mantém a divisão equilibrada.
+   * A foto fica à direita sem criar um
+   * espaço enorme entre ela e o texto.
+   */
   grid-template-columns: 1fr 0.9fr;
 
   align-items: center;
@@ -485,7 +490,6 @@ button:focus-visible {
 .hero__copy {
   max-width: 650px;
 
-  /* mantém o texto onde já está */
   transform: translateX(20px);
 
   position: relative;
@@ -499,12 +503,21 @@ button:focus-visible {
 .hero__portrait {
   position: relative;
 
+  /*
+   * Mesma altura visual da foto da seção Sobre
+   */
   height: min(72vh, 640px);
 
+  /*
+   * Ocupa toda a coluna da direita
+   */
   justify-self: stretch;
 
   width: 100%;
 
+  /*
+   * Sem limite artificial de largura
+   */
   max-width: none;
 
   transform: none;
@@ -523,7 +536,8 @@ button:focus-visible {
   top: 6%;
   left: -6%;
 }
-}
+
+
 /* ============================================
    02 · SOBRE
    ============================================ */
@@ -537,9 +551,6 @@ button:focus-visible {
 
   align-items: center;
 
-  /*
-   * MENOR ESPAÇO ENTRE TEXTO E FOTO
-   */
   gap: 15px;
 }
 
@@ -689,9 +700,6 @@ button:focus-visible {
 
   text-align: center;
 
-  /*
-   * MENOS ESPAÇO ANTES DOS SERVIÇOS
-   */
   margin-bottom: 32px;
 }
 
@@ -704,11 +712,6 @@ button:focus-visible {
 
   line-height: 1.05;
 }
-
-
-/*
- * GRID DOS SERVIÇOS
- */
 
 .grid--services {
   display: grid;
@@ -749,9 +752,6 @@ button:focus-visible {
 
   font-weight: 500;
 
-  /*
-   * TÍTULO DOS SERVIÇOS MAIOR
-   */
   font-size: 1.65rem;
 
   margin-bottom: 8px;
@@ -760,9 +760,6 @@ button:focus-visible {
 }
 
 .service p {
-  /*
-   * TEXTO DOS SERVIÇOS BEM MAIOR
-   */
   font-size: 1.22rem;
 
   color: #cfccc4;
@@ -786,9 +783,6 @@ button:focus-visible {
 
   align-items: center;
 
-  /*
-   * TEXTO E FOTO MAIS PRÓXIMOS
-   */
   gap: 15px;
 }
 
@@ -813,9 +807,6 @@ button:focus-visible {
 
   gap: 14px;
 
-  /*
-   * CONTATOS MAIORES
-   */
   font-size: 1.08rem;
 
   color: #d8d5cd;
@@ -1061,9 +1052,6 @@ button:focus-visible {
 
   margin-top: 0;
 
-  /*
-   * TEXTO DOS PROJETOS MAIOR
-   */
   font-size: 1.25rem;
 
   line-height: 1.7;
