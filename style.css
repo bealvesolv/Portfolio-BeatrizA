@@ -475,16 +475,18 @@ button:focus-visible {
 
   display: grid;
 
-  grid-template-columns: 1.12fr 0.88fr;
+  /* MESMA PROPORÇÃO DA PÁGINA SOBRE */
+  grid-template-columns: 1fr 0.9fr;
 
   align-items: center;
 
-  gap: 20px;
+  gap: 15px;
 }
 
 .hero__copy {
   max-width: 650px;
 
+  /* mantém o texto onde já está */
   transform: translateX(20px);
 
   position: relative;
@@ -498,15 +500,17 @@ button:focus-visible {
 .hero__portrait {
   position: relative;
 
-  height: min(80vh, 740px);
+  /* mesma lógica da página SOBRE, mas um pouco maior */
+  height: min(76vh, 700px);
 
   justify-self: end;
 
   width: 100%;
 
-  max-width: 570px;
+  max-width: 540px;
 
-  transform: translateX(0);
+  /* sem empurrar artificialmente */
+  transform: none;
 }
 
 .hero__portrait img {
