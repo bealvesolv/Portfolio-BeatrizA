@@ -432,9 +432,9 @@ button:focus-visible {
 .hero__grid {
   flex: 1;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
   padding-top: 10px;
 }
 
