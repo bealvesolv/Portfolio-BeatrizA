@@ -506,7 +506,7 @@ button:focus-visible {
 
   width: 100%;
 
-  max-width: 600px;
+  max-width: none;
 
   transform: none;
 }
@@ -524,7 +524,6 @@ button:focus-visible {
   top: 6%;
   left: -6%;
 }
-
 /* ============================================
    02 · SOBRE
    ============================================ */
