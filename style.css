@@ -500,16 +500,14 @@ button:focus-visible {
 .hero__portrait {
   position: relative;
 
-  /* mesma lógica da página SOBRE, mas um pouco maior */
   height: min(76vh, 700px);
 
   justify-self: end;
 
   width: 100%;
 
-  max-width: 540px;
+  max-width: 600px;
 
-  /* sem empurrar artificialmente */
   transform: none;
 }
 
