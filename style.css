@@ -444,7 +444,7 @@ button:focus-visible {
 
 .hero__portrait {
   position: relative;
-  height: min( 670px);
+  height: min(62vh, 580px);
   justify-self: center;
   width: 680px;
   max-width: 850px;
@@ -470,9 +470,9 @@ button:focus-visible {
 .sobre__grid {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
+  grid-template-columns: minmax(0, 380px) 1fr;
   align-items: start;
-  gap: 25px;
+  gap: 32px;
 }
 
 .sobre__copy {
@@ -481,7 +481,7 @@ button:focus-visible {
 
 .sobre__portrait {
   position: relative;
-  height: min(670px);
+  height: min(62vh, 580px);
   width: 100%;
   max-width: 850px;
 }
