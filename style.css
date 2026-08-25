@@ -444,10 +444,11 @@ button:focus-visible {
 
 .hero__portrait {
   position: relative;
-  height: min(62vh, 560px);
-  justify-self: end;
-  width: 100%;
-  max-width: 460px;
+  height: min( 670px);
+  justify-self: center;
+  width: 680px;
+  max-width: 850px;
+
 }
 
 .hero__portrait img {
@@ -475,12 +476,12 @@ button:focus-visible {
 }
 
 .sobre__copy {
-  max-width: 480px;
+  max-width: 380px;
 }
 
 .sobre__portrait {
   position: relative;
-  height: min(72vh, 640px);
+  height: min (240px);
 }
 
 .sobre__portrait img {
