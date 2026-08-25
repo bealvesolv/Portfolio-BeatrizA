@@ -483,10 +483,10 @@ button:focus-visible {
   font-size: 1.2rem;
   line-height: 1.65;
 }
-
 .sobre__portrait {
   position: relative;
-  height: min(460px, 55vh);
+  height: min(600px, 70vh);
+  width: 100%;
 }
 
 .sobre__portrait img {
@@ -495,6 +495,7 @@ button:focus-visible {
   object-fit: cover;
   filter: grayscale(1) contrast(1.05);
 }
+
 
 .script-overlay {
   position: absolute;
