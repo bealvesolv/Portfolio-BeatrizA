@@ -598,10 +598,11 @@ button:focus-visible {
 }
 
 .project__meta p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--fg-muted);
   letter-spacing: 0.04em;
-  line-height: 1.5;
+  line-height: 1.55;
+}
 }
 
 .project[hidden] {
