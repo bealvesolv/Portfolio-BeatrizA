@@ -156,7 +156,7 @@ button:focus-visible {
 /* TEXTOS PRINCIPAIS */
 
 .body-text {
-  font-size: 1.2rem;
+  font-size: 1.38rem;
   color: #cfccc4;
   max-width: 42ch;
   margin-top: 18px;
@@ -170,7 +170,7 @@ button:focus-visible {
 }
 
 .lede {
-  font-size: 1.3rem;
+  font-size: 1.48rem;
   color: #cfccc4;
   max-width: 38ch;
   margin: 22px 0 34px;
@@ -433,7 +433,7 @@ button:focus-visible {
   flex: 1;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
+  align-items: start;
   gap: 40px;
   padding-top: 10px;
 }
@@ -471,7 +471,7 @@ button:focus-visible {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 0.9fr;
-  align-items: center;
+  align-items: start;
   gap: 25px;
 }
 
@@ -481,7 +481,9 @@ button:focus-visible {
 
 .sobre__portrait {
   position: relative;
-  height: min (240px);
+  height: min(670px);
+  width: 100%;
+  max-width: 850px;
 }
 
 .sobre__portrait img {
@@ -620,7 +622,7 @@ button:focus-visible {
 
 .servicos__intro .body-text,
 .servicos__intro p {
-  font-size: 1.2rem;
+  font-size: 1.38rem;
   line-height: 1.65;
 }
 
@@ -656,7 +658,7 @@ button:focus-visible {
 }
 
 .service p {
-  font-size: 1.02rem;
+  font-size: 1.16rem;
   color: var(--fg-muted);
   max-width: 34ch;
   line-height: 1.65;
@@ -670,7 +672,7 @@ button:focus-visible {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 0.85fr;
-  align-items: center;
+  align-items: start;
   gap: 25px;
 }
 
@@ -689,7 +691,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-size: 1rem;
+  font-size: 1.14rem;
   color: #d8d5cd;
   line-height: 1.5;
 }
@@ -788,12 +790,12 @@ button:focus-visible {
 
   .body-text,
   .lede {
-    font-size: 1.08rem;
+    font-size: 1.22rem;
     line-height: 1.6;
   }
 
   .service p {
-    font-size: 0.98rem;
+    font-size: 1.1rem;
   }
 
   .display {
@@ -877,7 +879,7 @@ button:focus-visible {
 .case-section .body-text {
   max-width: 66ch;
   margin-top: 0;
-  font-size: 1.18rem;
+  font-size: 1.34rem;
   line-height: 1.7;
 }
 
