@@ -471,10 +471,8 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   align-items: center;
-  gap: 25px;
+  gap: 40px;
 }
-
-/* ALTERAÇÃO: texto do SOBRE mais amplo */
 
 .sobre__copy {
   max-width: 500px;
@@ -488,7 +486,7 @@ button:focus-visible {
 
 .sobre__portrait {
   position: relative;
-  height: min(240px);
+  height: min(460px, 55vh);
 }
 
 .sobre__portrait img {
